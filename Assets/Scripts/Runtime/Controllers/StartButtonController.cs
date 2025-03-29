@@ -20,6 +20,7 @@ namespace MyNamespace
         {
             CoreUISignals.Instance.onCloseAllPanel();
             Instantiate(Resources.Load<GameObject>("Prefabs/Game"));
+            CoreUISignals.Instance.onOpenPanel(Runtime.Enums.UIPanelTypes.Game, 0);
         }
     }
 }
